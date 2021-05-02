@@ -1,0 +1,80 @@
+version: '3.4'
+services:
+  reverseproxy:
+    container_name: encontreumlivro_reverseproxy
+    build:
+      context : ./.docker/reverseproxy/
+      dockerfile: Nginx.Dockerfile
+    depends_on:
+      - app_1
+      - app_2
+    ports:
+      - "8080:80"
+    restart: always
+    networks:
+      - encontreumlivro
+
+  app_1:
+    container_name: encontreumlivro_app_1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    networks:
+      - encontreumlivro
+  app_2:
+    container_name: encontreumlivro_app_2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:80"
+    networks:
+      - encontreumlivro
+    volumes:
+      - .:/usr/share/nginx/html
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    volumes:
+      - ./.docker/mongo/data:/data/db:rw
+    ports:
+      - "27018:27017"
+
+  redis:
+    image: 'bitnami/redis:latest'
+    container_name: redis
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "6380:6379"
+    volumes:
+      - ./.docker/redis/data:/bitnami
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.2.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - node.name=elasticsearch
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - cluster.routing.allocation.disk.threshold_enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9500:9200"
+      - "9600:9300"
+    volumes:
+      - ./.docker/elasticsearch/data:/usr/share/elasticsearch/data:rw
+      - ./.docker/elasticsearch/plugins:/usr/share/elasticsearch/plugins:rw
+
+networks:
+  encontreumlivro:
+    driver: bridge
