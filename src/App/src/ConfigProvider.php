@@ -16,6 +16,8 @@ class ConfigProvider
      *
      * To add a bit of a structure, each section is defined in a separate
      * method which returns an array with its configuration.
+     *
+     * @return array<string,array>
      */
     public function __invoke(): array
     {
@@ -27,6 +29,8 @@ class ConfigProvider
 
     /**
      * Returns the container dependencies
+     *
+     * @return array<string,array>
      */
     public function getDependencies(): array
     {
@@ -42,6 +46,8 @@ class ConfigProvider
 
     /**
      * Returns the templates configuration
+     *
+     * @return array<string,array>
      */
     public function getTemplates(): array
     {

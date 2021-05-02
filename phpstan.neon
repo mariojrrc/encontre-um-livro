@@ -1,0 +1,14 @@
+includes:
+	- vendor/phpstan/phpstan/conf/bleedingEdge.neon
+parameters:
+    tmpDir: data/cache
+    level: max
+    paths:
+        - src
+        - config
+    reportUnmatchedIgnoredErrors: false
+    ignoreErrors:
+        - '#Call to an undefined method Laminas\\View\\Renderer\\RendererInterface::plugin\(\)#'
+        - '#Call to an undefined method Laminas\\Form\\ElementInterface::populateValues\(\)#'
+        - '#Function newrelic_(.*) not found#'
+        - '#Function newrelic_notice_error invoked with 2 parameters, 0 required.#'
