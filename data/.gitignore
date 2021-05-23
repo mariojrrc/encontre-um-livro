@@ -3,4 +3,6 @@
 !cache/.gitkeep
 !.gitignore
 !logs
+!logs/.gitkeep
 !i18n
+!i18n/*
