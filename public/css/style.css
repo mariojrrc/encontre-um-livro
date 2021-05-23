@@ -3417,8 +3417,8 @@ h3.rate {
 }
 .select-box {
     background: rgba(255, 76, 76, 0.66);
-    padding: 30px 30px;
-    margin: 40px 0;
+    padding: 10px 30px;
+    margin: 20px 0;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -5370,7 +5370,7 @@ label {
 		margin: 0 2%;
 	}
 	.select-box {
-		padding: 30px 15px;
+        padding: 10px 30px;
 	}
 	.slider {
 		min-height: 255px;
@@ -6721,8 +6721,8 @@ label {
 		float: none;
 	}
 	.select-box {
-		padding: 25px 15px;
-		margin: 35px 0;
+        padding: 10px 30px;
+        margin: 20px 0;
 	}
 	.btn-group.bootstrap-select.show-tick button {
 		width: 93%;

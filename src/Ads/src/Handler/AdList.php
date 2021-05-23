@@ -25,7 +25,9 @@ class AdList implements RequestHandlerInterface
         // Render and return a response:
         return new HtmlResponse($this->renderer->render(
             'ads::ad-list',
-            [] // parameters to pass to template
+            [
+                'query' => $request->getQueryParams(),
+            ]
         ));
     }
 }

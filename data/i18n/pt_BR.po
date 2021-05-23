@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encontre Um livro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-23 00:21-0300\n"
-"PO-Revision-Date: 2021-05-23 10:25-0300\n"
+"POT-Creation-Date: 2021-05-23 12:19-0300\n"
+"PO-Revision-Date: 2021-05-23 12:22-0300\n"
 "Last-Translator: Mario Costa <mariojr.rcosta@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -22,7 +22,9 @@ msgstr ""
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: src/App/src/Constants.php:25 src/App/templates/layout/default.phtml:71
+#: src/App/src/Constants.php:25 src/Ads/templates/ad-list.phtml:27
+#: src/Ads/templates/categories.phtml:36
+#: src/App/templates/layout/default.phtml:71
 msgid "Children Education"
 msgstr "Educação Infantil"
 
@@ -46,13 +48,132 @@ msgstr "EJA"
 msgid "Translator not defined"
 msgstr "Tradutor não definido"
 
-#: src/Ads/templates/ad-list.phtml:7
+#: src/Ads/templates/ad-list.phtml:21
+msgid "Select your category and find the perfect ad"
+msgstr "Selecione uma categoria e encontre o anúncio perfeito"
+
+#: src/Ads/templates/ad-list.phtml:27 src/Ads/templates/ad-list.phtml:38
+#: src/Ads/templates/ad-list.phtml:151 src/Ads/templates/ad-list.phtml:167
+#: src/Ads/templates/ad-list.phtml:183 src/Ads/templates/ad-list.phtml:199
+#: src/Ads/templates/ad-list.phtml:215 src/Ads/templates/ad-list.phtml:231
+#: src/Ads/templates/ad-list.phtml:247 src/Ads/templates/ad-list.phtml:263
+#: src/Ads/templates/ad-list.phtml:279 src/Ads/templates/ad-list.phtml:295
+#: src/Ads/templates/ad-list.phtml:311 src/Ads/templates/ad-list.phtml:352
+#: src/Ads/templates/ad-list.phtml:368 src/Ads/templates/ad-list.phtml:384
+#: src/Ads/templates/ad-list.phtml:400 src/Ads/templates/ad-list.phtml:416
+#: src/Ads/templates/ad-list.phtml:432 src/Ads/templates/ad-list.phtml:448
+#: src/Ads/templates/ad-list.phtml:464 src/Ads/templates/ad-list.phtml:480
+#: src/Ads/templates/ad-list.phtml:496 src/Ads/templates/ad-list.phtml:512
+#: src/Ads/templates/ad-list.phtml:528 src/Ads/templates/ad-list.phtml:544
+#: src/Ads/templates/ad-list.phtml:560 src/Ads/templates/categories.phtml:37
+msgid "1st Year"
+msgstr "1° Ano"
+
+#: src/Ads/templates/ad-list.phtml:29 src/Ads/templates/ad-list.phtml:39
+#: src/Ads/templates/categories.phtml:55
+msgid "2nd Year"
+msgstr "2° Ano"
+
+#: src/Ads/templates/ad-list.phtml:30 src/Ads/templates/ad-list.phtml:40
+#: src/Ads/templates/categories.phtml:56
+msgid "3rd Year"
+msgstr "3° Ano"
+
+#: src/Ads/templates/ad-list.phtml:31 src/Ads/templates/categories.phtml:57
+msgid "4th Year"
+msgstr "4° Ano"
+
+#: src/Ads/templates/ad-list.phtml:32 src/Ads/templates/categories.phtml:58
+msgid "5th Year"
+msgstr "5° Ano"
+
+#: src/Ads/templates/ad-list.phtml:34 src/Ads/templates/categories.phtml:76
+msgid "6th Year"
+msgstr "6° Ano"
+
+#: src/Ads/templates/ad-list.phtml:35
+msgid "7rd Year"
+msgstr "7° Ano"
+
+#: src/Ads/templates/ad-list.phtml:36 src/Ads/templates/categories.phtml:78
+msgid "8th Year"
+msgstr "8° Ano"
+
+#: src/Ads/templates/ad-list.phtml:46
+msgid "Name contains"
+msgstr "Nome contém"
+
+#: src/Ads/templates/ad-list.phtml:48 src/Ads/templates/ad-list.phtml:49
+msgid "Product name..."
+msgstr "Nome do produto..."
+
+#: src/Ads/templates/ad-list.phtml:55
+msgid "Price range"
+msgstr "Faixa de preço"
+
+#: src/Ads/templates/ad-list.phtml:65
+msgid "Featured Ads"
+msgstr "Anúncios destacados"
+
+#: src/Ads/templates/ad-list.phtml:112
 msgid "All Ads"
 msgstr "Todos anúncios"
 
-#: src/Ads/templates/ad-list.phtml:43
-msgid "Select your category and find the perfect ad"
-msgstr "Selecione uma categoria e encontre o anúncio perfeito"
+#: src/Ads/templates/ad-list.phtml:118
+msgid "Ads with Photos"
+msgstr "Anúncios com Fotos"
+
+#: src/Ads/templates/ad-list.phtml:133 src/Ads/templates/ad-list.phtml:334
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: src/Ads/templates/ad-list.phtml:135 src/Ads/templates/ad-list.phtml:336
+msgid "Most Recent"
+msgstr "Mais Recente"
+
+#: src/Ads/templates/ad-list.phtml:136 src/Ads/templates/ad-list.phtml:337
+msgid "Price: Rs Low to High"
+msgstr "Preço: Menor para Maior"
+
+#: src/Ads/templates/ad-list.phtml:137 src/Ads/templates/ad-list.phtml:338
+msgid "Price: Rs High to Low"
+msgstr "Preço: Maior para Menor"
+
+#: src/Ads/templates/ad-list.phtml:138 src/Ads/templates/ad-list.phtml:339
+msgid "Oldest"
+msgstr "Mais antigo"
+
+#: src/Ads/templates/ad-list.phtml:154 src/Ads/templates/ad-list.phtml:170
+#: src/Ads/templates/ad-list.phtml:186 src/Ads/templates/ad-list.phtml:202
+#: src/Ads/templates/ad-list.phtml:218 src/Ads/templates/ad-list.phtml:234
+#: src/Ads/templates/ad-list.phtml:250 src/Ads/templates/ad-list.phtml:266
+#: src/Ads/templates/ad-list.phtml:282 src/Ads/templates/ad-list.phtml:298
+#: src/Ads/templates/ad-list.phtml:314 src/Ads/templates/ad-list.phtml:355
+#: src/Ads/templates/ad-list.phtml:371 src/Ads/templates/ad-list.phtml:387
+#: src/Ads/templates/ad-list.phtml:403 src/Ads/templates/ad-list.phtml:419
+#: src/Ads/templates/ad-list.phtml:435 src/Ads/templates/ad-list.phtml:451
+#: src/Ads/templates/ad-list.phtml:467 src/Ads/templates/ad-list.phtml:483
+#: src/Ads/templates/ad-list.phtml:499 src/Ads/templates/ad-list.phtml:515
+#: src/Ads/templates/ad-list.phtml:531 src/Ads/templates/ad-list.phtml:547
+#: src/Ads/templates/ad-list.phtml:563
+msgid "Today"
+msgstr "Hoje"
+
+#: src/Ads/templates/ad-list.phtml:155 src/Ads/templates/ad-list.phtml:171
+#: src/Ads/templates/ad-list.phtml:187 src/Ads/templates/ad-list.phtml:203
+#: src/Ads/templates/ad-list.phtml:219 src/Ads/templates/ad-list.phtml:235
+#: src/Ads/templates/ad-list.phtml:251 src/Ads/templates/ad-list.phtml:267
+#: src/Ads/templates/ad-list.phtml:283 src/Ads/templates/ad-list.phtml:299
+#: src/Ads/templates/ad-list.phtml:315 src/Ads/templates/ad-list.phtml:356
+#: src/Ads/templates/ad-list.phtml:372 src/Ads/templates/ad-list.phtml:388
+#: src/Ads/templates/ad-list.phtml:404 src/Ads/templates/ad-list.phtml:420
+#: src/Ads/templates/ad-list.phtml:436 src/Ads/templates/ad-list.phtml:452
+#: src/Ads/templates/ad-list.phtml:468 src/Ads/templates/ad-list.phtml:484
+#: src/Ads/templates/ad-list.phtml:500 src/Ads/templates/ad-list.phtml:516
+#: src/Ads/templates/ad-list.phtml:532 src/Ads/templates/ad-list.phtml:548
+#: src/Ads/templates/ad-list.phtml:564
+msgid "City name"
+msgstr "Nome da cidade"
 
 #: src/Ads/templates/categories.phtml:4
 msgid "Categories"
@@ -62,6 +183,32 @@ msgstr "Categorias"
 #: src/App/templates/layout/default.phtml:518
 msgid "All Categories"
 msgstr "Todas as Categorias"
+
+#: src/Ads/templates/categories.phtml:19 src/Ads/templates/categories.phtml:30
+#: src/Ads/templates/categories.phtml:49 src/Ads/templates/categories.phtml:70
+#: src/Ads/templates/categories.phtml:90 src/Ads/templates/categories.phtml:111
+msgid "View all Ads"
+msgstr "Todos anúncios"
+
+#: src/Ads/templates/categories.phtml:77
+msgid "7th Year"
+msgstr "7° Ano"
+
+#: src/Ads/templates/categories.phtml:96
+msgid "9th Year"
+msgstr "9° Ano"
+
+#: src/Ads/templates/categories.phtml:97
+msgid "1st Year High School"
+msgstr "1° Ano Ensino Médio"
+
+#: src/Ads/templates/categories.phtml:98
+msgid "2nd Year High School"
+msgstr "2° Ano Ensino Médio"
+
+#: src/Ads/templates/categories.phtml:99
+msgid "3rd Year High School"
+msgstr "3° Ano Ensino Médio"
 
 #: src/App/templates/app/home-page.phtml:8
 msgid "Sell or Donate books online"
