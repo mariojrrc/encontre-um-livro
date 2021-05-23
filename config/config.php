@@ -18,6 +18,7 @@ if (file_exists($envFile)) {
     $dotEnv->usePutenv(true)->overload($envFile);
 }
 
+// @phpcs:disable SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName
 $aggregator = new ConfigAggregator([
     \Laminas\Form\ConfigProvider::class,
     \Laminas\Hydrator\ConfigProvider::class,
@@ -64,5 +65,6 @@ static function (): array {
     // Load development config if it exists
     new PhpFileProvider(realpath(__DIR__) . '/development.config.php'),
 ], $cacheConfig['config_cache_path']);
+// @phpcs:enable SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName
 
 return $aggregator->getMergedConfig();
