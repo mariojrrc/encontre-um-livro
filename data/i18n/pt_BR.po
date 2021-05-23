@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encontre Um livro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-23 12:19-0300\n"
-"PO-Revision-Date: 2021-05-23 12:22-0300\n"
+"POT-Creation-Date: 2021-05-23 12:40-0300\n"
+"PO-Revision-Date: 2021-05-23 12:42-0300\n"
 "Last-Translator: Mario Costa <mariojr.rcosta@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -48,33 +48,102 @@ msgstr "EJA"
 msgid "Translator not defined"
 msgstr "Tradutor não definido"
 
+#: src/Ads/templates/ad-detail.phtml:17
+msgid "Chemistry"
+msgstr "Química"
+
+#: src/Ads/templates/ad-detail.phtml:18
+msgid "state"
+msgstr "estado"
+
+#: src/Ads/templates/ad-detail.phtml:18
+msgid "city"
+msgstr "cidade"
+
+#: src/Ads/templates/ad-detail.phtml:46
+msgid "Isbn"
+msgstr "Isbn"
+
+#: src/Ads/templates/ad-detail.phtml:47
+msgid "Views"
+msgstr "Vizualizações"
+
+#: src/Ads/templates/ad-detail.phtml:48
+msgid "Summary"
+msgstr "Resumo"
+
+#: src/Ads/templates/ad-detail.phtml:55
+msgid "Price"
+msgstr "Price"
+
+#: src/Ads/templates/ad-detail.phtml:60
+msgid "Condition"
+msgstr "Condição"
+
+#: src/Ads/templates/ad-detail.phtml:61
+msgid "Good"
+msgstr "Boa"
+
+#: src/Ads/templates/ad-detail.phtml:65
+msgid "Item Type"
+msgstr "Tipo do livro"
+
+#: src/Ads/templates/ad-detail.phtml:66 src/Ads/templates/ad-list.phtml:27
+#: src/Ads/templates/ad-list.phtml:39 src/Ads/templates/ad-list.phtml:152
+#: src/Ads/templates/ad-list.phtml:168 src/Ads/templates/ad-list.phtml:184
+#: src/Ads/templates/ad-list.phtml:200 src/Ads/templates/ad-list.phtml:216
+#: src/Ads/templates/ad-list.phtml:232 src/Ads/templates/ad-list.phtml:248
+#: src/Ads/templates/ad-list.phtml:264 src/Ads/templates/ad-list.phtml:280
+#: src/Ads/templates/ad-list.phtml:296 src/Ads/templates/ad-list.phtml:312
+#: src/Ads/templates/ad-list.phtml:353 src/Ads/templates/ad-list.phtml:369
+#: src/Ads/templates/ad-list.phtml:385 src/Ads/templates/ad-list.phtml:401
+#: src/Ads/templates/ad-list.phtml:417 src/Ads/templates/ad-list.phtml:433
+#: src/Ads/templates/ad-list.phtml:449 src/Ads/templates/ad-list.phtml:465
+#: src/Ads/templates/ad-list.phtml:481 src/Ads/templates/ad-list.phtml:497
+#: src/Ads/templates/ad-list.phtml:513 src/Ads/templates/ad-list.phtml:529
+#: src/Ads/templates/ad-list.phtml:545 src/Ads/templates/ad-list.phtml:561
+#: src/Ads/templates/categories.phtml:37
+msgid "1st Year"
+msgstr "1° Ano"
+
+#: src/Ads/templates/ad-detail.phtml:71
+msgid "Interested in this Ad?"
+msgstr "Ficou Interessado?"
+
+#: src/Ads/templates/ad-detail.phtml:71
+msgid "Contact the Seller!"
+msgstr "Entre em contato com o anunciante!"
+
+#: src/Ads/templates/ad-detail.phtml:75
+msgid "Safety Tips for Buyers"
+msgstr "Dicas de Segurança"
+
+#: src/Ads/templates/ad-detail.phtml:77
+msgid "Do not make payments before checking what is being advertised."
+msgstr "Não faça pagamentos antes de verificar o que está sendo anunciado."
+
+#: src/Ads/templates/ad-detail.phtml:78
+msgid "Be aware of excess facilities and prices below the market."
+msgstr "Fique atento com excessos de facilidades e preços abaixo do mercado."
+
+#: src/Ads/templates/ad-detail.phtml:79
+msgid ""
+"If you are detaching, clean not only your hands, but also the product and "
+"leave it well wrapped."
+msgstr ""
+"Se está desapegando, limpe bem não só as mãos, como o produto e deixe-o "
+"também bem embrulhado."
+
 #: src/Ads/templates/ad-list.phtml:21
 msgid "Select your category and find the perfect ad"
 msgstr "Selecione uma categoria e encontre o anúncio perfeito"
 
-#: src/Ads/templates/ad-list.phtml:27 src/Ads/templates/ad-list.phtml:38
-#: src/Ads/templates/ad-list.phtml:151 src/Ads/templates/ad-list.phtml:167
-#: src/Ads/templates/ad-list.phtml:183 src/Ads/templates/ad-list.phtml:199
-#: src/Ads/templates/ad-list.phtml:215 src/Ads/templates/ad-list.phtml:231
-#: src/Ads/templates/ad-list.phtml:247 src/Ads/templates/ad-list.phtml:263
-#: src/Ads/templates/ad-list.phtml:279 src/Ads/templates/ad-list.phtml:295
-#: src/Ads/templates/ad-list.phtml:311 src/Ads/templates/ad-list.phtml:352
-#: src/Ads/templates/ad-list.phtml:368 src/Ads/templates/ad-list.phtml:384
-#: src/Ads/templates/ad-list.phtml:400 src/Ads/templates/ad-list.phtml:416
-#: src/Ads/templates/ad-list.phtml:432 src/Ads/templates/ad-list.phtml:448
-#: src/Ads/templates/ad-list.phtml:464 src/Ads/templates/ad-list.phtml:480
-#: src/Ads/templates/ad-list.phtml:496 src/Ads/templates/ad-list.phtml:512
-#: src/Ads/templates/ad-list.phtml:528 src/Ads/templates/ad-list.phtml:544
-#: src/Ads/templates/ad-list.phtml:560 src/Ads/templates/categories.phtml:37
-msgid "1st Year"
-msgstr "1° Ano"
-
-#: src/Ads/templates/ad-list.phtml:29 src/Ads/templates/ad-list.phtml:39
+#: src/Ads/templates/ad-list.phtml:29 src/Ads/templates/ad-list.phtml:40
 #: src/Ads/templates/categories.phtml:55
 msgid "2nd Year"
 msgstr "2° Ano"
 
-#: src/Ads/templates/ad-list.phtml:30 src/Ads/templates/ad-list.phtml:40
+#: src/Ads/templates/ad-list.phtml:30 src/Ads/templates/ad-list.phtml:41
 #: src/Ads/templates/categories.phtml:56
 msgid "3rd Year"
 msgstr "3° Ano"
@@ -91,73 +160,61 @@ msgstr "5° Ano"
 msgid "6th Year"
 msgstr "6° Ano"
 
-#: src/Ads/templates/ad-list.phtml:35
-msgid "7rd Year"
+#: src/Ads/templates/ad-list.phtml:35 src/Ads/templates/categories.phtml:77
+msgid "7th Year"
 msgstr "7° Ano"
 
 #: src/Ads/templates/ad-list.phtml:36 src/Ads/templates/categories.phtml:78
 msgid "8th Year"
 msgstr "8° Ano"
 
-#: src/Ads/templates/ad-list.phtml:46
+#: src/Ads/templates/ad-list.phtml:37 src/Ads/templates/categories.phtml:96
+msgid "9th Year"
+msgstr "9° Ano"
+
+#: src/Ads/templates/ad-list.phtml:47
 msgid "Name contains"
 msgstr "Nome contém"
 
-#: src/Ads/templates/ad-list.phtml:48 src/Ads/templates/ad-list.phtml:49
+#: src/Ads/templates/ad-list.phtml:49 src/Ads/templates/ad-list.phtml:50
 msgid "Product name..."
 msgstr "Nome do produto..."
 
-#: src/Ads/templates/ad-list.phtml:55
+#: src/Ads/templates/ad-list.phtml:56
 msgid "Price range"
 msgstr "Faixa de preço"
 
-#: src/Ads/templates/ad-list.phtml:65
+#: src/Ads/templates/ad-list.phtml:66
 msgid "Featured Ads"
 msgstr "Anúncios destacados"
 
-#: src/Ads/templates/ad-list.phtml:112
+#: src/Ads/templates/ad-list.phtml:113
 msgid "All Ads"
 msgstr "Todos anúncios"
 
-#: src/Ads/templates/ad-list.phtml:118
+#: src/Ads/templates/ad-list.phtml:119
 msgid "Ads with Photos"
 msgstr "Anúncios com Fotos"
 
-#: src/Ads/templates/ad-list.phtml:133 src/Ads/templates/ad-list.phtml:334
+#: src/Ads/templates/ad-list.phtml:134 src/Ads/templates/ad-list.phtml:335
 msgid "Sort by"
 msgstr "Ordenar por"
 
-#: src/Ads/templates/ad-list.phtml:135 src/Ads/templates/ad-list.phtml:336
+#: src/Ads/templates/ad-list.phtml:136 src/Ads/templates/ad-list.phtml:337
 msgid "Most Recent"
 msgstr "Mais Recente"
 
-#: src/Ads/templates/ad-list.phtml:136 src/Ads/templates/ad-list.phtml:337
+#: src/Ads/templates/ad-list.phtml:137 src/Ads/templates/ad-list.phtml:338
 msgid "Price: Rs Low to High"
 msgstr "Preço: Menor para Maior"
 
-#: src/Ads/templates/ad-list.phtml:137 src/Ads/templates/ad-list.phtml:338
+#: src/Ads/templates/ad-list.phtml:138 src/Ads/templates/ad-list.phtml:339
 msgid "Price: Rs High to Low"
 msgstr "Preço: Maior para Menor"
 
-#: src/Ads/templates/ad-list.phtml:138 src/Ads/templates/ad-list.phtml:339
+#: src/Ads/templates/ad-list.phtml:139 src/Ads/templates/ad-list.phtml:340
 msgid "Oldest"
 msgstr "Mais antigo"
-
-#: src/Ads/templates/ad-list.phtml:154 src/Ads/templates/ad-list.phtml:170
-#: src/Ads/templates/ad-list.phtml:186 src/Ads/templates/ad-list.phtml:202
-#: src/Ads/templates/ad-list.phtml:218 src/Ads/templates/ad-list.phtml:234
-#: src/Ads/templates/ad-list.phtml:250 src/Ads/templates/ad-list.phtml:266
-#: src/Ads/templates/ad-list.phtml:282 src/Ads/templates/ad-list.phtml:298
-#: src/Ads/templates/ad-list.phtml:314 src/Ads/templates/ad-list.phtml:355
-#: src/Ads/templates/ad-list.phtml:371 src/Ads/templates/ad-list.phtml:387
-#: src/Ads/templates/ad-list.phtml:403 src/Ads/templates/ad-list.phtml:419
-#: src/Ads/templates/ad-list.phtml:435 src/Ads/templates/ad-list.phtml:451
-#: src/Ads/templates/ad-list.phtml:467 src/Ads/templates/ad-list.phtml:483
-#: src/Ads/templates/ad-list.phtml:499 src/Ads/templates/ad-list.phtml:515
-#: src/Ads/templates/ad-list.phtml:531 src/Ads/templates/ad-list.phtml:547
-#: src/Ads/templates/ad-list.phtml:563
-msgid "Today"
-msgstr "Hoje"
 
 #: src/Ads/templates/ad-list.phtml:155 src/Ads/templates/ad-list.phtml:171
 #: src/Ads/templates/ad-list.phtml:187 src/Ads/templates/ad-list.phtml:203
@@ -172,6 +229,22 @@ msgstr "Hoje"
 #: src/Ads/templates/ad-list.phtml:500 src/Ads/templates/ad-list.phtml:516
 #: src/Ads/templates/ad-list.phtml:532 src/Ads/templates/ad-list.phtml:548
 #: src/Ads/templates/ad-list.phtml:564
+msgid "Today"
+msgstr "Hoje"
+
+#: src/Ads/templates/ad-list.phtml:156 src/Ads/templates/ad-list.phtml:172
+#: src/Ads/templates/ad-list.phtml:188 src/Ads/templates/ad-list.phtml:204
+#: src/Ads/templates/ad-list.phtml:220 src/Ads/templates/ad-list.phtml:236
+#: src/Ads/templates/ad-list.phtml:252 src/Ads/templates/ad-list.phtml:268
+#: src/Ads/templates/ad-list.phtml:284 src/Ads/templates/ad-list.phtml:300
+#: src/Ads/templates/ad-list.phtml:316 src/Ads/templates/ad-list.phtml:357
+#: src/Ads/templates/ad-list.phtml:373 src/Ads/templates/ad-list.phtml:389
+#: src/Ads/templates/ad-list.phtml:405 src/Ads/templates/ad-list.phtml:421
+#: src/Ads/templates/ad-list.phtml:437 src/Ads/templates/ad-list.phtml:453
+#: src/Ads/templates/ad-list.phtml:469 src/Ads/templates/ad-list.phtml:485
+#: src/Ads/templates/ad-list.phtml:501 src/Ads/templates/ad-list.phtml:517
+#: src/Ads/templates/ad-list.phtml:533 src/Ads/templates/ad-list.phtml:549
+#: src/Ads/templates/ad-list.phtml:565
 msgid "City name"
 msgstr "Nome da cidade"
 
@@ -189,14 +262,6 @@ msgstr "Todas as Categorias"
 #: src/Ads/templates/categories.phtml:90 src/Ads/templates/categories.phtml:111
 msgid "View all Ads"
 msgstr "Todos anúncios"
-
-#: src/Ads/templates/categories.phtml:77
-msgid "7th Year"
-msgstr "7° Ano"
-
-#: src/Ads/templates/categories.phtml:96
-msgid "9th Year"
-msgstr "9° Ano"
 
 #: src/Ads/templates/categories.phtml:97
 msgid "1st Year High School"
@@ -332,3 +397,6 @@ msgstr "Entre em contato conosco"
 #: src/App/templates/layout/default.phtml:570
 msgid "Our headquarters"
 msgstr "Nossos endereços"
+
+#~ msgid "7rd Year"
+#~ msgstr "7° Ano"

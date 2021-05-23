@@ -2,10 +2,10 @@
 <div class="w3layouts-breadcrumbs text-center">
     <div class="container">
 			<span class="agile-breadcrumbs">
-			<a href="<?= $this->url('home')?>">"><i class="fa fa-home home_1"></i></a> /
+			<a href="<?= $this->url('home')?>"><i class="fa fa-home home_1"></i></a> /
 			<a href="<?= $this->url('ads.list')?>">All Ads</a> /
 			<a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_ENSINO_MEDIO])?>"><?= $this->translate(\App\Constants::categoryName(\App\Constants::CATEGORY_ENSINO_MEDIO))?></a> /
-			<span>Car name</span></span>
+			<span>XYZ</span></span>
     </div>
 </div>
 <!-- //breadcrumbs -->
@@ -14,21 +14,18 @@
     <div class="container">
         <div class="product-desc">
             <div class="col-md-7 product-view">
-                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
-                <p> <i class="glyphicon glyphicon-map-marker"></i><a href="#">state</a>, <a href="#">city</a>| Added at 06:55 pm, Ad ID: 987654321</p>
+                <h2>XYZ - <?= $this->t('Chemistry')?></h2>
+                <p> <i class="glyphicon glyphicon-map-marker"></i><a href="#"><?= $this->t('state')?></a>, <a href="#"><?= $this->t('city')?></a>| Added at 06:55 pm, Ad ID: 987654321</p>
                 <div class="flexslider">
                     <ul class="slides">
-                        <li data-thumb="/images/ss1.jpg">
-                            <img src="/images/ss1.jpg" />
+                        <li data-thumb="/images/quimica-1.jpg">
+                            <img src="/images/quimica-1.jpg" />
                         </li>
-                        <li data-thumb="/images/ss2.jpg">
-                            <img src="/images/ss2.jpg" />
+                        <li data-thumb="/images/quimica-2.jpg">
+                            <img src="/images/quimica-2.jpg" />
                         </li>
-                        <li data-thumb="/images/ss3.jpg">
-                            <img src="/images/ss3.jpg" />
-                        </li>
-                        <li data-thumb="/images/ss4.jpg">
-                            <img src="/images/ss4.jpg" />
+                        <li data-thumb="/images/quimica-3.jpg">
+                            <img src="/images/quimica-3.jpg" />
                         </li>
                     </ul>
                 </div>
@@ -46,47 +43,40 @@
                 </script>
                 <!-- //FlexSlider -->
                 <div class="product-details">
-                    <h4><span class="w3layouts-agileinfo">Brand </span> : <a href="#">Company name</a><div class="clearfix"></div></h4>
-                    <h4><span class="w3layouts-agileinfo">Views </span> : <strong>150</strong></h4>
-                    <h4><span class="w3layouts-agileinfo">Fuel </span> : Petrol</h4>
-                    <h4><span class="w3layouts-agileinfo">Summary</span> :<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p><div class="clearfix"></div></h4>
+                    <h4><span class="w3layouts-agileinfo"><?= $this->t('Isbn')?> </span> : <a href="#">0-3024-5049-1</a><div class="clearfix"></div></h4>
+                    <h4><span class="w3layouts-agileinfo"><?= $this->t('Views')?> </span> : <strong>150</strong></h4>
+                    <h4><span class="w3layouts-agileinfo"><?= $this->t('Summary')?></span> :<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p><div class="clearfix"></div></h4>
 
                 </div>
             </div>
             <div class="col-md-5 product-details-grid">
                 <div class="item-price">
                     <div class="product-price">
-                        <p class="p-price">Price</p>
-                        <h3 class="rate">$ 45999</h3>
+                        <p class="p-price"><?= $this->t('Price')?></p>
+                        <h3 class="rate">R$ 45</h3>
                         <div class="clearfix"></div>
                     </div>
                     <div class="condition">
-                        <p class="p-price">Condition</p>
-                        <h4>Good</h4>
+                        <p class="p-price"><?= $this->t('Condition')?></p>
+                        <h4><?= $this->t('Good')?></h4>
                         <div class="clearfix"></div>
                     </div>
                     <div class="itemtype">
-                        <p class="p-price">Item Type</p>
-                        <h4>Cars</h4>
+                        <p class="p-price"><?= $this->t('Item Type')?></p>
+                        <h4><?= $this->t(App\Constants::categoryName(App\Constants::CATEGORY_ENSINO_MEDIO))?> » <?= $this->t('1st Year')?></h4>
                         <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="interested text-center">
-                    <h4>Interested in this Ad?<small> Contact the Seller!</small></h4>
-                    <p><i class="glyphicon glyphicon-earphone"></i>00-85-9875462655</p>
+                    <h4><?= $this->t('Interested in this Ad?')?><small> <?= $this->t('Contact the Seller!')?></small></h4>
+                    <p><i class="glyphicon glyphicon-earphone"></i>+55-21-987546265</p>
                 </div>
                 <div class="tips">
-                    <h4>Safety Tips for Buyers</h4>
+                    <h4><?= $this->t('Safety Tips for Buyers')?></h4>
                     <ol>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
-                        <li><a href="#">Contrary to popular belief.</a></li>
+                        <li><a href="#"><?= $this->t('Do not make payments before checking what is being advertised.')?>.</a></li>
+                        <li><a href="#"><?= $this->t('Be aware of excess facilities and prices below the market.')?>.</a></li>
+                        <li><a href="#"><?= $this->t('If you are detaching, clean not only your hands, but also the product and leave it well wrapped.')?>.</a></li>
                     </ol>
                 </div>
             </div>

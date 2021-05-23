@@ -3325,7 +3325,7 @@ span.w3layouts-agileinfo {
 }
 p.p-price {
     float: left;
-    width: 50%;
+    width: 45%;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
@@ -3342,7 +3342,7 @@ h3.rate {
 .condition h4,.itemtype h4 {
     margin: 0;
     floaT: left;
-    font-size: 22px;
+    font-size: 20px;
 }
 .condition p,.itemtype p {
     margin: 0;
