@@ -1,0 +1,153 @@
+<!-- breadcrumbs -->
+<div class="w3layouts-breadcrumbs text-center">
+    <div class="container">
+        <span class="agile-breadcrumbs"><a href="<?= $this->url('home')?>"><i class="fa fa-home home_1"></i></a> / <span><?= $this->translate('Categories')?></span></span>
+    </div>
+</div>
+
+<div class="categories-section main-grid-border">
+    <div class="container">
+        <h2 class="w3-head"><?= $this->translate('All Categories')?></h2>
+        <div class="category-list">
+            <div id="parentVerticalTab">
+                <div class="agileits-tab_nav">
+                    <ul class="resp-tabs-list hor_1">
+                        <?php foreach (\App\Constants::getCategoriesDescriptions() as $slug => $description):?>
+                            <li><?= $this->translate($description)?></li>
+                        <?php endforeach;?>
+                    </ul>
+                    <a class="w3ls-ads" href="all-classifieds.html">View all Ads</a>
+                </div>
+                <div class="resp-tabs-container hor_1">
+                    <span class="active total" style="display:block;" data-toggle="modal" data-target="#myModal"><strong>All USA</strong> (Select your city to see local ads)</span>
+                    <div>
+                        <div class="category">
+                            <div class="category-img">
+                                <img src="/images/cat1.png" title="image" alt="" />
+                            </div>
+                            <div class="category-info">
+                                <h4>Mobiles</h4>
+                                <span>5,12,850 Ads</span>
+                                <a href="all-classifieds.html">View all Ads</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-categories">
+                            <ul>
+                                <li><a href="mobiles.html">mobile phones</a></li>
+                                <li><a href="mobiles.html">Tablets</a></li>
+                                <li><a href="mobiles.html">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="category">
+                            <div class="category-img">
+                                <img src="/images/cat2.png" title="image" alt="" />
+                            </div>
+                            <div class="category-info">
+                                <h4>Electronics & Appliances</h4>
+                                <span>2,01,850 Ads</span>
+                                <a href="all-classifieds.html">View all Ads</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-categories">
+                            <ul>
+                                <li><a href="electronics-appliances.html">Computers & accessories</a></li>
+                                <li><a href="electronics-appliances.html">Tv - video - audio</a></li>
+                                <li><a href="electronics-appliances.html">Cameras & accessories</a></li>
+                                <li><a href="electronics-appliances.html">Games & Entertainment</a></li>
+                                <li><a href="electronics-appliances.html">Fridge - AC - Washing Machine</a></li>
+                                <li><a href="electronics-appliances.html">Kitchen & Other Appliances</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="category">
+                            <div class="category-img">
+                                <img src="/images/cat3.png" title="image" alt="" />
+                            </div>
+                            <div class="category-info">
+                                <h4>Cars</h4>
+                                <span>1,98,080 Ads</span>
+                                <a href="all-classifieds.html">View all Ads</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-categories">
+                            <ul>
+                                <li><a href="cars.html">Commercial Vehicles</a></li>
+                                <li><a href="cars.html">Other Vehicles</a></li>
+                                <li><a href="cars.html">Spare Parts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="category">
+                            <div class="category-img">
+                                <img src="/images/cat4.png" title="image" alt="" />
+                            </div>
+                            <div class="category-info">
+                                <h4>Bikes</h4>
+                                <span>6,17,568 Ads</span>
+                                <a href="all-classifieds.html">View all Ads</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-categories">
+                            <ul>
+                                <li><a href="bikes.html">Motorcycles</a></li>
+                                <li><a href="bikes.html">Scooters</a></li>
+                                <li><a href="bikes.html">Bicycles</a></li>
+                                <li><a href="bikes.html">Spare Parts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="category">
+                            <div class="category-img">
+                                <img src="/images/cat5.png" title="image" alt="" />
+                            </div>
+                            <div class="category-info">
+                                <h4>Furniture</h4>
+                                <span>1,05,168 Ads</span>
+                                <a href="all-classifieds.html">View all Ads</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-categories">
+                            <ul>
+                                <li><a href="furnitures.html">Sofa & Dining</a></li>
+                                <li><a href="furnitures.html">Beds & Wardrobes</a></li>
+                                <li><a href="furnitures.html">Home Decor & Garden</a></li>
+                                <li><a href="furnitures.html">Other Household Items</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php $this->inlineScript()->captureStart(); ?>
+//<script>
+  $(document).ready(function() {
+    //Vertical Tab
+    $('#parentVerticalTab').easyResponsiveTabs({
+      type: 'vertical', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      closed: 'accordion', // Start closed if in accordion view
+      tabidentify: 'hor_1', // The tab groups identifier
+      activate: function(event) { // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $('#nested-tabInfo2');
+        var $name = $('span', $info);
+        $name.text($tab.text());
+        $info.show();
+      }
+    });
+  });
+<?php $this->inlineScript()->captureEnd(); ?>

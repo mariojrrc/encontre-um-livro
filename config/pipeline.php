@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+use App\Middleware\NewRelicMiddleware;
+use App\Middleware\SessionMiddleware;
+use App\Middleware\SetupTranslator;
 use Laminas\Stratigility\Middleware\ErrorHandler;
 use Mezzio\Application;
 use Mezzio\Handler\NotFoundHandler;
@@ -41,6 +44,8 @@ return static function (Application $app, MiddlewareFactory $factory, ContainerI
     // - $app->pipe('/api', $apiMiddleware);
     // - $app->pipe('/docs', $apiDocMiddleware);
     // - $app->pipe('/files', $filesMiddleware);
+    $app->pipe(SetupTranslator::class);
+    $app->pipe(SessionMiddleware::class);
 
     // Register the routing middleware in the middleware pipeline.
     // This middleware registers the Mezzio\Router\RouteResult request attribute.
@@ -66,6 +71,7 @@ return static function (Application $app, MiddlewareFactory $factory, ContainerI
     // - route-based validation
     // - etc.
 
+    $app->pipe(NewRelicMiddleware::class);
     // Register the dispatch middleware in the middleware pipeline
     $app->pipe(DispatchMiddleware::class);
 

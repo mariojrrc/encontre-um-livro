@@ -6,3 +6,5 @@
 /vendor/
 /node_modules
 .docker/data
+.env
+.env*
