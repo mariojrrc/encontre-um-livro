@@ -16,113 +16,101 @@
                             <li><?= $this->translate($description)?></li>
                         <?php endforeach;?>
                     </ul>
-                    <a class="w3ls-ads" href="all-classifieds.html">View all Ads</a>
+                    <a class="w3ls-ads" href="<?= $this->url('ads.list')?>"><?= $this->t('View all Ads')?></a>
                 </div>
                 <div class="resp-tabs-container hor_1">
-                    <span class="active total" style="display:block;" data-toggle="modal" data-target="#myModal"><strong>All USA</strong> (Select your city to see local ads)</span>
                     <div>
                         <div class="category">
                             <div class="category-img">
-                                <img src="/images/cat1.png" title="image" alt="" />
+                                <img src="/images/cat7.png" title="image" alt="" />
                             </div>
                             <div class="category-info">
-                                <h4>Mobiles</h4>
+                                <h4><?= $this->t(App\Constants::categoryName(App\Constants::CATEGORY_EDUCACAO_INFANTIL))?></h4>
                                 <span>5,12,850 Ads</span>
-                                <a href="all-classifieds.html">View all Ads</a>
+                                <a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_EDUCACAO_INFANTIL])?>"><?= $this->t('View all Ads')?></a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="sub-categories">
                             <ul>
-                                <li><a href="mobiles.html">mobile phones</a></li>
-                                <li><a href="mobiles.html">Tablets</a></li>
-                                <li><a href="mobiles.html">Accessories</a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_EDUCACAO_INFANTIL])?>"><?= $this->t('Children Education')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '1-ano'])?>"><?= $this->t('1st Year')?></a></li>
                             </ul>
                         </div>
                     </div>
                     <div>
                         <div class="category">
                             <div class="category-img">
-                                <img src="/images/cat2.png" title="image" alt="" />
+                                <img src="/images/cat7.png" title="image" alt="" />
                             </div>
                             <div class="category-info">
-                                <h4>Electronics & Appliances</h4>
-                                <span>2,01,850 Ads</span>
-                                <a href="all-classifieds.html">View all Ads</a>
+                                <h4><?= $this->t(App\Constants::categoryName(App\Constants::CATEGORY_FUNDAMENTAL_I))?></h4>
+                                <span>2,12,850 Ads</span>
+                                <a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_FUNDAMENTAL_I])?>"><?= $this->t('View all Ads')?></a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="sub-categories">
                             <ul>
-                                <li><a href="electronics-appliances.html">Computers & accessories</a></li>
-                                <li><a href="electronics-appliances.html">Tv - video - audio</a></li>
-                                <li><a href="electronics-appliances.html">Cameras & accessories</a></li>
-                                <li><a href="electronics-appliances.html">Games & Entertainment</a></li>
-                                <li><a href="electronics-appliances.html">Fridge - AC - Washing Machine</a></li>
-                                <li><a href="electronics-appliances.html">Kitchen & Other Appliances</a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '2-ano'])?>"><?= $this->t('2nd Year')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '3-ano'])?>"><?= $this->t('3rd Year')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '4-ano'])?>"><?= $this->t('4th Year')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '5-ano'])?>"><?= $this->t('5th Year')?></a></li>
                             </ul>
                         </div>
                     </div>
                     <div>
                         <div class="category">
                             <div class="category-img">
-                                <img src="/images/cat3.png" title="image" alt="" />
+                                <img src="/images/cat7.png" title="image" alt="" />
                             </div>
                             <div class="category-info">
-                                <h4>Cars</h4>
-                                <span>1,98,080 Ads</span>
-                                <a href="all-classifieds.html">View all Ads</a>
+                                <h4><?= $this->t(App\Constants::categoryName(App\Constants::CATEGORY_FUNDAMENTAL_II))?></h4>
+                                <span>850 Ads</span>
+                                <a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_FUNDAMENTAL_II])?>"><?= $this->t('View all Ads')?></a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="sub-categories">
                             <ul>
-                                <li><a href="cars.html">Commercial Vehicles</a></li>
-                                <li><a href="cars.html">Other Vehicles</a></li>
-                                <li><a href="cars.html">Spare Parts</a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '6-ano'])?>"><?= $this->t('6th Year')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '7-ano'])?>"><?= $this->t('7th Year')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '8-ano'])?>"><?= $this->t('8th Year')?></a></li>
                             </ul>
                         </div>
                     </div>
                     <div>
                         <div class="category">
                             <div class="category-img">
-                                <img src="/images/cat4.png" title="image" alt="" />
+                                <img src="/images/cat7.png" title="image" alt="" />
                             </div>
                             <div class="category-info">
-                                <h4>Bikes</h4>
-                                <span>6,17,568 Ads</span>
-                                <a href="all-classifieds.html">View all Ads</a>
+                                <h4><?= $this->t(App\Constants::categoryName(App\Constants::CATEGORY_ENSINO_MEDIO))?></h4>
+                                <span>2,12,850 Ads</span>
+                                <a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_ENSINO_MEDIO])?>"><?= $this->t('View all Ads')?></a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="sub-categories">
                             <ul>
-                                <li><a href="bikes.html">Motorcycles</a></li>
-                                <li><a href="bikes.html">Scooters</a></li>
-                                <li><a href="bikes.html">Bicycles</a></li>
-                                <li><a href="bikes.html">Spare Parts</a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => '9-ano'])?>"><?= $this->t('9th Year')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => 'em-1-ano'])?>"><?= $this->t('1st Year High School')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => 'em-2-ano'])?>"><?= $this->t('2nd Year High School')?></a></li>
+                                <li><a href="<?= $this->url('ads.list', [], ['category' => 'em-3-ano'])?>"><?= $this->t('3rd Year High School')?></a></li>
                             </ul>
                         </div>
                     </div>
                     <div>
                         <div class="category">
                             <div class="category-img">
-                                <img src="/images/cat5.png" title="image" alt="" />
+                                <img src="/images/cat7.png" title="image" alt="" />
                             </div>
                             <div class="category-info">
-                                <h4>Furniture</h4>
-                                <span>1,05,168 Ads</span>
-                                <a href="all-classifieds.html">View all Ads</a>
+                                <h4><?= $this->t(App\Constants::categoryName(App\Constants::CATEGORY_EJA))?></h4>
+                                <span>2,12,850 Ads</span>
+                                <a href="<?= $this->url('ads.list', [], ['category' => \App\Constants::CATEGORY_EJA])?>"><?= $this->t('View all Ads')?></a>
                             </div>
                             <div class="clearfix"></div>
-                        </div>
-                        <div class="sub-categories">
-                            <ul>
-                                <li><a href="furnitures.html">Sofa & Dining</a></li>
-                                <li><a href="furnitures.html">Beds & Wardrobes</a></li>
-                                <li><a href="furnitures.html">Home Decor & Garden</a></li>
-                                <li><a href="furnitures.html">Other Household Items</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
