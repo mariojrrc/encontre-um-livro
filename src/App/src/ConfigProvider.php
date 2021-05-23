@@ -83,6 +83,11 @@ class ConfigProvider
                 Handler\HomePageHandler::class => Handler\HomePageHandlerFactory::class,
                 Handler\ChangeLanguage::class => Handler\ChangeLanguageFactory::class,
             ],
+            'delegators' => [
+                ErrorHandler::class => [
+                    Listener\LoggingErrorListenerDelegatorFactory::class,
+                ],
+            ],
         ];
     }
 
