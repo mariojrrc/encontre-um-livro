@@ -5,11 +5,9 @@ declare(strict_types=1);
 namespace Ads;
 
 use Ads\Handler\AdDetail;
-use Ads\Handler\AdDetailFactory;
 use Ads\Handler\AdList;
-use Ads\Handler\AdListFactory;
 use Ads\Handler\Categories;
-use Ads\Handler\CategoriesFactory;
+use Ads\Handler\NewAd;
 use Laminas\ServiceManager\AbstractFactory\ConfigAbstractFactory;
 
 /**
@@ -43,10 +41,10 @@ class ConfigProvider
         return [
             'invokables' => [],
             'factories'  => [
-                AdDetail::class => AdDetailFactory::class,
-                AdList::class => AdListFactory::class,
-                Categories::class => CategoriesFactory::class,
-
+                Handler\AdDetail::class => Handler\AdDetailFactory::class,
+                Handler\AdList::class => Handler\AdListFactory::class,
+                Handler\Categories::class => Handler\CategoriesFactory::class,
+                Handler\NewAd::class => Handler\NewAdFactory::class,
             ],
         ];
     }
@@ -85,6 +83,13 @@ class ConfigProvider
                 'path' => '/ad/category/{category}',
                 'middleware' => Categories::class,
                 'allowed_methods' => ['GET'],
+                'auth_required' => false,
+            ],
+            [
+                'name' => 'ads.new',
+                'path' => '/ad/new',
+                'middleware' => NewAd::class,
+                'allowed_methods' => ['GET', 'POST'],
                 'auth_required' => false,
             ],
         ];

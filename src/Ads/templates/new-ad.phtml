@@ -1,0 +1,76 @@
+<!-- breadcrumbs -->
+<div class="w3layouts-breadcrumbs text-center">
+    <div class="container">
+        <span class="agile-breadcrumbs"><a href="<?= $this->url('home')?>"><i class="fa fa-home home_1"></i></a> / <span><?= $this->t('Post your Ad');?></span></span>
+    </div>
+</div>
+<!-- //breadcrumbs -->
+<!-- Submit Ad -->
+<div class="submit-ad main-grid-border">
+    <div class="container">
+        <h2 class="w3-head"><?= $this->t('Post an Ad');?></h2>
+        <div class="post-ad-form">
+            <form method="post">
+                <label><?= $this->t('Select Category');?> <span>*</span></label>
+                <select class="" required="required">
+                    <option value=""><?= $this->t('Select Category');?></option>
+                    <?php foreach (\App\Constants::getCategoriesDescriptions() as $slug => $description):?>
+                        <option><?= $this->translate($description)?></option>
+                    <?php endforeach;?>
+                </select>
+                <div class="clearfix"></div>
+                <label><?= $this->t('Ad Title');?> <span>*</span></label>
+                <input type="text" class="phone" placeholder="" required="required">
+                <div class="clearfix"></div>
+                <label><?= $this->t('Ad Description');?> <span>*</span></label>
+                <textarea class="mess" placeholder="<?= $this->t('Write few lines about your product');?>" required="required"></textarea>
+                <div class="clearfix"></div>
+                <div class="upload-ad-photos">
+                    <label><?= $this->t('Photos for your ad');?> :</label>
+                    <div class="photos-upload-view">
+                        <form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+
+                            <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+                            <div>
+                                <input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+                                <div id="filedrag"><?= $this->t('or drop files here');?></div>
+                            </div>
+
+                            <div id="submitbutton">
+                                <button type="submit"><?= $this->t('Upload Files');?></button>
+                            </div>
+
+                        </form>
+
+                        <div id="messages">
+                            <p>Status Messages</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <script src="/js/filedrag.js"></script>
+                </div>
+                <div class="personal-details">
+                    <form>
+                        <label><?= $this->t('Your Name');?> <span>*</span></label>
+                        <input type="text" class="name" placeholder="">
+                        <div class="clearfix"></div>
+                        <label><?= $this->t('Your Mobile No');?> <span>*</span></label>
+                        <input type="text" class="phone" placeholder="">
+                        <div class="clearfix"></div>
+                        <label><?= $this->t('Your Email Address');?><span>*</span></label>
+                        <input type="text" class="email" placeholder="">
+                        <label><?= $this->t('Your Address');?><span>*</span></label>
+                        <input type="text" class="address" placeholder="">
+                        <label><?= $this->t('Your Zip');?><span>*</span></label>
+                        <input type="text" class="Zip" placeholder="">
+                        <div class="clearfix"></div>
+                        <p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+                        <input type="submit" value="Post">
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- // Submit Ad -->
