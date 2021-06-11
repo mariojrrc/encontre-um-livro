@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Authentication;
 
+use Authentication\Handler\Login;
+use Authentication\Handler\Logout;
+use Authentication\Handler\MyProfile;
+use Authentication\Handler\Register;
+
 /**
  * The configuration provider for the Authentication module
  *
@@ -22,6 +27,7 @@ class ConfigProvider
         return [
             'dependencies' => $this->getDependencies(),
             'templates'    => $this->getTemplates(),
+            'routes'       => $this->getRoutes(),
         ];
     }
 
@@ -32,7 +38,12 @@ class ConfigProvider
     {
         return [
             'invokables' => [],
-            'factories'  => [],
+            'factories'  => [
+                Handler\Login::class => Handler\LoginFactory::class,
+                Handler\Logout::class => Handler\LogoutFactory::class,
+                Handler\MyProfile::class => Handler\MyProfileFactory::class,
+                Handler\Register::class => Handler\RegisterFactory::class,
+            ],
         ];
     }
 
@@ -44,6 +55,40 @@ class ConfigProvider
         return [
             'paths' => [
                 'authentication'    => [__DIR__ . '/../templates/'],
+            ],
+        ];
+    }
+
+    private function getRoutes(): array
+    {
+        return [
+            [
+                'name' => 'authentication.login',
+                'path' => '/login',
+                'middleware' => Login::class,
+                'allowed_methods' => ['GET', 'POST'],
+                'auth_required' => false,
+            ],
+            [
+                'name' => 'authentication.register',
+                'path' => '/register',
+                'middleware' => Register::class,
+                'allowed_methods' => ['GET', 'POST'],
+                'auth_required' => false,
+            ],
+            [
+                'name' => 'authentication.myprofile',
+                'path' => '/my-profile',
+                'middleware' => MyProfile::class,
+                'allowed_methods' => ['GET'],
+                'auth_required' => false,
+            ],
+            [
+                'name' => 'authentication.logout',
+                'path' => '/logout',
+                'middleware' => Logout::class,
+                'allowed_methods' => ['GET'],
+                'auth_required' => false,
             ],
         ];
     }
