@@ -3,8 +3,8 @@
         <div class="agileinfo_signin">
             <h3><?= $this->t('Sign In')?></h3>
             <form method="post" id="formLogin">
-                <input type="email" name="Your Email" placeholder="Your Email" required=""/>
-                <input type="password" name="Password" placeholder="Password" required=""/>
+                <input type="email" name="Your Email" placeholder="<?= $this->t('Your Email')?>" required=""/>
+                <input type="password" name="Password" placeholder="<?= $this->t('Password')?>" required=""/>
                 <input type="submit" value="<?= $this->t('Sign In')?>">
                 <div class="forgot-grid">
                     <label class="checkbox"><input type="checkbox" name="checkbox"><?= $this->t('Remember me')?></label>

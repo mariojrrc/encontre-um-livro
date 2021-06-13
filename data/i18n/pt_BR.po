@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encontre Um livro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-10 20:28-0300\n"
-"PO-Revision-Date: 2021-06-10 20:59-0300\n"
+"POT-Creation-Date: 2021-06-13 12:59-0300\n"
+"PO-Revision-Date: 2021-06-13 13:07-0300\n"
 "Last-Translator: Mario Costa <mariojr.rcosta@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -24,23 +24,23 @@ msgstr "Desconhecido"
 
 #: src/App/src/Constants.php:25 src/Ads/templates/ad-list.phtml:30
 #: src/Ads/templates/categories.phtml:36
-#: src/App/templates/layout/default.phtml:71
+#: src/App/templates/layout/default.phtml:72
 msgid "Children Education"
 msgstr "Educação Infantil"
 
-#: src/App/src/Constants.php:26 src/App/templates/layout/default.phtml:73
+#: src/App/src/Constants.php:26 src/App/templates/layout/default.phtml:74
 msgid "Elementary School I"
 msgstr "Ensino fundamental I"
 
-#: src/App/src/Constants.php:27 src/App/templates/layout/default.phtml:75
+#: src/App/src/Constants.php:27 src/App/templates/layout/default.phtml:76
 msgid "Elementary School II"
 msgstr "Ensino fundamental II"
 
-#: src/App/src/Constants.php:28 src/App/templates/layout/default.phtml:77
+#: src/App/src/Constants.php:28 src/App/templates/layout/default.phtml:78
 msgid "High School"
 msgstr "Ensino Médio"
 
-#: src/App/src/Constants.php:29 src/App/templates/layout/default.phtml:79
+#: src/App/src/Constants.php:29 src/App/templates/layout/default.phtml:80
 msgid "EJA"
 msgstr "EJA"
 
@@ -253,7 +253,7 @@ msgid "Categories"
 msgstr "Categorias"
 
 #: src/Ads/templates/categories.phtml:10
-#: src/App/templates/layout/default.phtml:518
+#: src/App/templates/layout/default.phtml:519
 msgid "All Categories"
 msgstr "Todas as Categorias"
 
@@ -274,6 +274,88 @@ msgstr "2° Ano Ensino Médio"
 #: src/Ads/templates/categories.phtml:99
 msgid "3rd Year High School"
 msgstr "3° Ano Ensino Médio"
+
+#: src/Ads/templates/new-ad.phtml:4
+msgid "Post your Ad"
+msgstr "Anunciar grátis"
+
+#: src/Ads/templates/new-ad.phtml:11
+msgid "Post an Ad"
+msgstr "Anunciar grátis"
+
+#: src/Ads/templates/new-ad.phtml:14 src/Ads/templates/new-ad.phtml:16
+msgid "Select Category"
+msgstr "Selecione a categoria"
+
+#: src/Ads/templates/new-ad.phtml:22
+msgid "Ad Title"
+msgstr "Título"
+
+#: src/Ads/templates/new-ad.phtml:25
+msgid "Ad Description"
+msgstr "Descrição"
+
+#: src/Ads/templates/new-ad.phtml:26
+msgid "Write few lines about your product"
+msgstr ""
+"Escreva detalhes sobre seu anúncio: estado de conservação, tempo de uso, "
+"resumo, etc"
+
+#: src/Ads/templates/new-ad.phtml:27
+msgid "Ad Price"
+msgstr "Preço"
+
+#: src/Ads/templates/new-ad.phtml:31
+msgid "Photos for your ad"
+msgstr "Fotos"
+
+#: src/Ads/templates/new-ad.phtml:39
+msgid "or drop files here"
+msgstr "ou solte os arquivos aqui"
+
+#: src/Ads/templates/new-ad.phtml:43
+msgid "Upload Files"
+msgstr "Carregar arquivos"
+
+#: src/Ads/templates/new-ad.phtml:57
+#: src/Authentication/templates/register.phtml:6
+msgid "Your Name"
+msgstr "Seu nome"
+
+#: src/Ads/templates/new-ad.phtml:60
+msgid "Your Mobile No"
+msgstr "Celular"
+
+#: src/Ads/templates/new-ad.phtml:63
+msgid "Your Email Address"
+msgstr "Email"
+
+#: src/Ads/templates/new-ad.phtml:65
+msgid "Your Address"
+msgstr "Endereço"
+
+#: src/Ads/templates/new-ad.phtml:67
+msgid "Your Zip"
+msgstr "CEP"
+
+#: src/Ads/templates/new-ad.phtml:70
+msgid "By clicking bellow you accept our"
+msgstr "Ao enviar o anúncio você concorda com nossos"
+
+#: src/Ads/templates/new-ad.phtml:70 src/App/templates/layout/default.phtml:564
+#: src/Authentication/templates/register.phtml:16
+msgid "Terms of Use"
+msgstr "Termos de Uso"
+
+#: src/Ads/templates/new-ad.phtml:70
+#: src/Authentication/templates/register.phtml:16
+msgid "and"
+msgstr "e"
+
+#: src/Ads/templates/new-ad.phtml:70 src/App/templates/layout/default.phtml:566
+#: src/Authentication/templates/register.phtml:18
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
 
 #: src/App/templates/app/home-page.phtml:8
 msgid "Sell or Donate books online"
@@ -315,40 +397,42 @@ msgstr ""
 msgid "Download The App"
 msgstr "Download do app"
 
-#: src/App/templates/layout/default.phtml:82
+#: src/App/templates/layout/default.phtml:83
 msgid "Close menu"
 msgstr "Fechar menu"
 
-#: src/App/templates/layout/default.phtml:95
+#: src/App/templates/layout/default.phtml:96
+#: src/Authentication/templates/login.phtml:4
+#: src/Authentication/templates/login.phtml:8
 msgid "Sign In"
 msgstr "Logar-se"
 
-#: src/App/templates/layout/default.phtml:98
-#: src/App/templates/layout/default.phtml:549
+#: src/App/templates/layout/default.phtml:99
+#: src/App/templates/layout/default.phtml:550
 msgid "Help"
 msgstr "Ajuda"
 
-#: src/App/templates/layout/default.phtml:101
+#: src/App/templates/layout/default.phtml:102
 msgid "languages"
 msgstr "idiomas"
 
-#: src/App/templates/layout/default.phtml:108
+#: src/App/templates/layout/default.phtml:109
 msgid "Select City"
 msgstr "Filtrar por Cidades"
 
-#: src/App/templates/layout/default.phtml:516
+#: src/App/templates/layout/default.phtml:517
 msgid "How can we help you today?"
 msgstr "Como podemos te ajudar hoje?"
 
-#: src/App/templates/layout/default.phtml:529
+#: src/App/templates/layout/default.phtml:530
 msgid "Post Free Ad"
 msgstr "Anunciar grátis"
 
-#: src/App/templates/layout/default.phtml:544
+#: src/App/templates/layout/default.phtml:545
 msgid "Who We Are"
 msgstr "Quem somos"
 
-#: src/App/templates/layout/default.phtml:545
+#: src/App/templates/layout/default.phtml:546
 msgid ""
 "It is a long established fact that a reader will be distracted by the "
 "readable content of a page when looking at its layout."
@@ -356,55 +440,88 @@ msgstr ""
 "It is a long established fact that a reader will be distracted by the "
 "readable content of a page when looking at its layout."
 
-#: src/App/templates/layout/default.phtml:546
+#: src/App/templates/layout/default.phtml:547
 msgid ""
 "The point of using Lorem Ipsum is that it has a more-or-less normal letters, "
 "as opposed to using Content here."
 msgstr ""
 
-#: src/App/templates/layout/default.phtml:551
+#: src/App/templates/layout/default.phtml:552
 msgid "How it Works"
 msgstr "Como funciona"
 
-#: src/App/templates/layout/default.phtml:555
+#: src/App/templates/layout/default.phtml:556
 msgid "Contact"
 msgstr "Contato"
 
-#: src/App/templates/layout/default.phtml:560
+#: src/App/templates/layout/default.phtml:561
 msgid "Information"
 msgstr "Informação"
 
-#: src/App/templates/layout/default.phtml:562
+#: src/App/templates/layout/default.phtml:563
 msgid "Locations Map"
 msgstr "Localizações"
 
-#: src/App/templates/layout/default.phtml:563
-msgid "Terms of Use"
-msgstr "Termos de Uso"
-
-#: src/App/templates/layout/default.phtml:564
+#: src/App/templates/layout/default.phtml:565
 msgid "Popular searches"
 msgstr "Buscas populares"
 
-#: src/App/templates/layout/default.phtml:565
-msgid "Privacy Policy"
-msgstr "Política de Privacidade"
-
-#: src/App/templates/layout/default.phtml:569
+#: src/App/templates/layout/default.phtml:570
 msgid "Contact Us"
 msgstr "Entre em contato conosco"
 
-#: src/App/templates/layout/default.phtml:570
+#: src/App/templates/layout/default.phtml:571
 msgid "Our headquarters"
 msgstr "Nossos endereços"
+
+#: src/Authentication/templates/login.phtml:6
+#: src/Authentication/templates/register.phtml:7
+msgid "Your Email"
+msgstr "Seu E-mail"
+
+#: src/Authentication/templates/login.phtml:7
+#: src/Authentication/templates/register.phtml:9
+msgid "Password"
+msgstr "Senha"
+
+#: src/Authentication/templates/login.phtml:10
+msgid "Remember me"
+msgstr "Lembra-me"
+
+#: src/Authentication/templates/login.phtml:12
+msgid "Forgot Password?"
+msgstr "Esqueceu a senha?"
+
+#: src/Authentication/templates/login.phtml:22
+msgid "Get Password"
+msgstr "Obter senha"
+
+#: src/Authentication/templates/login.phtml:23
+msgid ""
+"Enter your email address below and we'll send you an email with instructions"
+msgstr ""
+"Informe seu endereço de e-mail e enviaremos uma mensagem com as instruções"
 
 #: src/Authentication/templates/login.phtml:36
 msgid "Not a Member Yet?"
 msgstr "Ainda não é um membro?"
 
-#: src/Authentication/templates/login.phtml:36
+#: src/Authentication/templates/login.phtml:37
 msgid "Sign Up Now"
 msgstr "Faça seu cadastro agora"
+
+#: src/Authentication/templates/register.phtml:4
+#: src/Authentication/templates/register.phtml:21
+msgid "Sign Up"
+msgstr "Cadastro"
+
+#: src/Authentication/templates/register.phtml:10
+msgid "Confirm password"
+msgstr "Confirmação da senha"
+
+#: src/Authentication/templates/register.phtml:14
+msgid "I agree to your"
+msgstr "Eu concordo com seu"
 
 #~ msgid "7rd Year"
 #~ msgstr "7° Ano"

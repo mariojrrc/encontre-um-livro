@@ -12,7 +12,7 @@
         <div class="post-ad-form">
             <form method="post">
                 <label><?= $this->t('Select Category');?> <span>*</span></label>
-                <select class="" required="required">
+                <select class="" required="required" name="category">
                     <option value=""><?= $this->t('Select Category');?></option>
                     <?php foreach (\App\Constants::getCategoriesDescriptions() as $slug => $description):?>
                         <option><?= $this->translate($description)?></option>
@@ -20,10 +20,12 @@
                 </select>
                 <div class="clearfix"></div>
                 <label><?= $this->t('Ad Title');?> <span>*</span></label>
-                <input type="text" class="phone" placeholder="" required="required">
+                <input type="text" class="phone" placeholder="" required="required" name="title">
                 <div class="clearfix"></div>
                 <label><?= $this->t('Ad Description');?> <span>*</span></label>
-                <textarea class="mess" placeholder="<?= $this->t('Write few lines about your product');?>" required="required"></textarea>
+                <textarea class="mess" placeholder="<?= $this->t('Write few lines about your product');?>" required="required" name="description"></textarea>
+                <label><?= $this->t('Ad Price');?></label>
+                <input type="text" class="mess" name="price" id="price"/>
                 <div class="clearfix"></div>
                 <div class="upload-ad-photos">
                     <label><?= $this->t('Photos for your ad');?> :</label>
@@ -44,7 +46,7 @@
                         </form>
 
                         <div id="messages">
-                            <p>Status Messages</p>
+                            <p><?= $this->t('Upload Status Messages');?></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -65,7 +67,7 @@
                         <label><?= $this->t('Your Zip');?><span>*</span></label>
                         <input type="text" class="Zip" placeholder="">
                         <div class="clearfix"></div>
-                        <p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+                        <p class="post-terms"><?= $this->t('By clicking bellow you accept our');?> <a href="terms.html" target="_blank"><?= $this->t('Terms of Use');?> </a> <?= $this->t('and');?> <a href="privacy.html" target="_blank"><?= $this->t('Privacy Policy');?></a></p>
                         <input type="submit" value="Post">
                         <div class="clearfix"></div>
                     </form>
@@ -74,3 +76,6 @@
     </div>
 </div>
 <!-- // Submit Ad -->
+<?php $this->inlineScript()->captureStart(); ?>
+    $('#price').mask("#.##0,00", {reverse: true});
+<?php $this->inlineScript()->captureEnd(); ?>
