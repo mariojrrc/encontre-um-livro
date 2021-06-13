@@ -8,6 +8,7 @@ Opção 1:
 ```
 git clone git@github.com:mariojrrc/encontre-um-livro.git
 cd encontre-um-livro
+mv .env.dist .env
 composer install
 composer serve
 
@@ -18,6 +19,7 @@ Opção 2:
 ```
 git clone git@github.com:mariojrrc/encontre-um-livro.git
 cd encontre-um-livro
+mv .env.dist .env
 docker-compose up --build
 
 Acessar http://localhost:8080
