@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encontre Um livro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 12:59-0300\n"
-"PO-Revision-Date: 2021-06-13 13:07-0300\n"
+"POT-Creation-Date: 2021-06-13 16:20-0300\n"
+"PO-Revision-Date: 2021-06-13 16:20-0300\n"
 "Last-Translator: Mario Costa <mariojr.rcosta@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -305,54 +305,62 @@ msgstr ""
 msgid "Ad Price"
 msgstr "Preço"
 
-#: src/Ads/templates/new-ad.phtml:31
+#: src/Ads/templates/new-ad.phtml:29
+msgid "Ad ISBN"
+msgstr "ISBN"
+
+#: src/Ads/templates/new-ad.phtml:33
 msgid "Photos for your ad"
 msgstr "Fotos"
 
-#: src/Ads/templates/new-ad.phtml:39
+#: src/Ads/templates/new-ad.phtml:41
 msgid "or drop files here"
 msgstr "ou solte os arquivos aqui"
 
-#: src/Ads/templates/new-ad.phtml:43
+#: src/Ads/templates/new-ad.phtml:45
 msgid "Upload Files"
 msgstr "Carregar arquivos"
 
-#: src/Ads/templates/new-ad.phtml:57
+#: src/Ads/templates/new-ad.phtml:51
+msgid "Upload Status Messages"
+msgstr ""
+
+#: src/Ads/templates/new-ad.phtml:59
 #: src/Authentication/templates/register.phtml:6
 msgid "Your Name"
 msgstr "Seu nome"
 
-#: src/Ads/templates/new-ad.phtml:60
+#: src/Ads/templates/new-ad.phtml:62
 msgid "Your Mobile No"
 msgstr "Celular"
 
-#: src/Ads/templates/new-ad.phtml:63
+#: src/Ads/templates/new-ad.phtml:65
 msgid "Your Email Address"
 msgstr "Email"
 
-#: src/Ads/templates/new-ad.phtml:65
+#: src/Ads/templates/new-ad.phtml:67
 msgid "Your Address"
 msgstr "Endereço"
 
-#: src/Ads/templates/new-ad.phtml:67
+#: src/Ads/templates/new-ad.phtml:69
 msgid "Your Zip"
 msgstr "CEP"
 
-#: src/Ads/templates/new-ad.phtml:70
+#: src/Ads/templates/new-ad.phtml:72
 msgid "By clicking bellow you accept our"
 msgstr "Ao enviar o anúncio você concorda com nossos"
 
-#: src/Ads/templates/new-ad.phtml:70 src/App/templates/layout/default.phtml:564
+#: src/Ads/templates/new-ad.phtml:72 src/App/templates/layout/default.phtml:564
 #: src/Authentication/templates/register.phtml:16
 msgid "Terms of Use"
 msgstr "Termos de Uso"
 
-#: src/Ads/templates/new-ad.phtml:70
+#: src/Ads/templates/new-ad.phtml:72
 #: src/Authentication/templates/register.phtml:16
 msgid "and"
 msgstr "e"
 
-#: src/Ads/templates/new-ad.phtml:70 src/App/templates/layout/default.phtml:566
+#: src/Ads/templates/new-ad.phtml:72 src/App/templates/layout/default.phtml:566
 #: src/Authentication/templates/register.phtml:18
 msgid "Privacy Policy"
 msgstr "Política de Privacidade"
