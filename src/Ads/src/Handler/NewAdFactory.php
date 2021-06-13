@@ -9,7 +9,7 @@ use Psr\Container\ContainerInterface;
 
 class NewAdFactory
 {
-    public function __invoke(ContainerInterface $container) : NewAd
+    public function __invoke(ContainerInterface $container): NewAd
     {
         return new NewAd($container->get(TemplateRendererInterface::class));
     }

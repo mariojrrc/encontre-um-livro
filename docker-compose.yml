@@ -21,10 +21,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8081:80"
-    volumes:
-      - .:/usr/share/nginx/html
     networks:
       - encontreumlivro
+#    volumes:
+#      - .:/usr/share/nginx/html
   app_2:
     container_name: encontreumlivro_app_2
     build:
@@ -34,8 +34,8 @@ services:
       - "8082:80"
     networks:
       - encontreumlivro
-    volumes:
-      - .:/usr/share/nginx/html
+#    volumes:
+#      - .:/usr/share/nginx/html
 
   mongodb:
     image: mongo:latest

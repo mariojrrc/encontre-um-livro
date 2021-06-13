@@ -8,5 +8,5 @@ COPY . /usr/share/nginx/html
 
 WORKDIR /usr/share/nginx/html
 
-#RUN composer install --prefer-dist --no-dev -o
-RUN composer install --prefer-dist -o
+RUN composer install --prefer-dist --no-dev -o
+#RUN composer install --prefer-dist -o
